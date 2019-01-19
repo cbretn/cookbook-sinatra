@@ -1,0 +1,47 @@
+<div>
+ <div class="all-content">
+  <br>
+  <div class="navbar">
+    <li>
+      <a class="btn-success" href='/new'>Create</a>
+    </li>
+    <li>
+      <a class="btn-success" href='/destroy'>Delete</a>
+    </li>
+    <li>
+      <a class="btn-success" href='/marmiton_import'>Scrape</a>
+    </li>
+  </div>
+  <h1 class="main-title">Get a taste of these yummy recipes!</h1>
+    <br>
+    <img class="img" src="https://pixar-planet.fr/wp-content/uploads/2010/04/ratatouille-01-1024x402.jpg" alt="food samples" height="300" width="700">
+    <br> <br>
+    <p>
+      You can find <em>all current recipes</em> below!
+    </p>
+    <h4> Recipes List </h4>
+    <% @recipes.each do |recipe| %>
+      <li class="recipe-card" >
+        <a> <%= recipe.is_read == "true" ? "<span class='glyphicon glyphicon-ok-sign btn-success'></span>" : "<span class='glyphicon glyphicon-remove-sign btn-danger'></span>" %> </a>  —
+        <a href="/recipes/<%=recipe.id%>"><%= recipe.name %></a>
+      </li>
+    <% end %>
+    <br><br>
+    <p>
+      Or, you can <strong>create your own</strong>!
+    </p>
+    <a class="btn-primary" href='/new'> — Create a recipe — </a>
+      <br><br>
+    <p>
+      Also, you can <strong>delete a recipe</strong> if you dare!
+    </p>
+    <a class="btn-primary" href='/destroy'> — Delete a recipe — </a>
+    <br><br>
+    <p>
+      Finally, you can <strong>trust Marmiton</strong> and our chef if there's an ingredient you like!
+    </p>
+    <a class="btn-primary" href='/marmiton_import'> — Add top 5 Marmiton recipes by ingredient — </a>
+    <br><br><br><br><br>
+  </div>
+</div>
+<!-- pe (with equal) er (without equal) -->

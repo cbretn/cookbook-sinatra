@@ -1,0 +1,9 @@
+<h2><%= @recipe.name %></h2>
+<img src='https://vignette.wikia.nocookie.net/pixar/images/e/e0/Ratatouille-remy-spoon1.jpg/revision/latest?cb=20110512131150'>
+<h4>Preparation Time</h4>
+<p><span class="glyphicon glyphicon-time"></span><%=@recipe.time %></p>
+
+<h4>Description</h4>
+<p><%=@recipe.description %></p>
+<p>La recette a été lue: <%= @recipe.is_read %></p>
+

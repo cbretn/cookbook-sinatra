@@ -1,0 +1,15 @@
+  <h2>Delete an existing recipe</h2>
+  <img src="http://www.groupedmm.com/cms-sn/Paragraphes/gos90225/chefmangementgroupedmm.png" height="350" width="600">
+  <br> <br>
+    <h4>Hold on... are you sure you want to delete a recipe?</h6>
+    <p>If so, input the recipe name in the form below</p> <br>
+    <h5>Not sure what the recipe name is?</h5>
+    <p> Maybe you should've been paying closer attention.<p>
+    <p> You can always access the full recipe list <a href="/">here</a></p>
+    <br>
+    <form action="/recipe_to_destroy" method="POST">
+      Recipe Name:<br>
+      <input type="text" name="recipe_name" value="recipe name">
+      <br><br>
+      <input class="btn-danger" type="submit" value="Submit">
+    </form>

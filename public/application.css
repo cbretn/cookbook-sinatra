@@ -1,0 +1,55 @@
+/*.main-title {
+  color: grey: ;
+}
+
+.all-content {
+  border: 1px solid grey;
+  padding: 100px ;
+}
+
+.img {
+  padding: none;
+}
+*/
+
+.recipe-card {
+  border: grey;
+  padding: 10;
+  color: pink;
+}
+
+.btn-primary {
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  text-decoration: none;
+}
+
+.btn-success:hover {
+  text-decoration: none;
+}
+
+.navbar li {
+  padding: 10;
+  border: 1px solid grey;
+  justify-content: center;
+  align-items: inline;
+  justify-content: center;
+  display: inline-block;
+}
+
+* {
+  font-family: Avenir;
+}
+
+
+.navbar {
+  text-align:center;
+}
